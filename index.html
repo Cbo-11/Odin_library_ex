@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library.App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="app.js" defer></script>
+   
+</head>
+<body class="p-3 mb-2 bg-light.bg-gradient">
+    <div id=main> 
+    <header>
+    <h1>LIBRARY</h1>
+</header>
+        <div class="center">
+            <button id="new-book" type="button" class="btn btn-outline-success">Add New</button>
+        </div>
+        <div id="inputOverlay" class="inputOverlay">
+            <!-- overlay content -->
+            <div class="overlay-content">
+                <span class="close">&times;</span>
+                <form id='form' action='/app.js'>
+                    <h2>Add Book</h2>
+                <div>
+                <label for="title" class="form-label">Title: </label>
+                <Input id="title" class="form-control">
+                </div>
+                <div>
+                    <label for="author" class="form-label">Author: </label>
+                    <Input id="author" class="form-control">
+                </div>
+                <div>
+                    <label for="pages"  class="form-label">Page Numbers: </label>
+                    <Input id="pages" class="form-control">
+                </div>
+                <div class="form-check form-switch">
+                    <label class="form-check-label" for="read">Read</label>                   
+                     <input class="form-check-input" type="checkbox" id="read">
+                  </div>
+                <button id="submit" type="submit" form='form' class="btn btn-light">SUBMIT</button>
+            </form>
+            </div>
+          
+          </div>
+
+    <div id="library_contain"></div>
+    </div>
+
+</body>
+</html>
